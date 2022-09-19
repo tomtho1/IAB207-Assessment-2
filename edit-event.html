@@ -1,0 +1,306 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PerformBook - Edit Event</title>
+
+        <!-- import bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        
+        <!-- import google fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin">
+
+        <!-- link to css sheet-->
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+
+        <!-- favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-bg">
+        <div class="container">
+
+            <a href="index.html" class="navbar-brand">
+                <img src="favicon/favicon-32x32.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            PerformBook
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar -->
+            <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="events-landing.html">Events</a>
+                <a class="nav-item nav-link active" href="account.html">Account</a>
+                <a class="nav-item nav-link" href="login.html">Login</a>
+
+                <form class="form input-group">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <a href="events-landing.html" class="btn search-btn">Search</a>
+                </form>
+            </div>
+            </div>
+        </div>
+    </nav>
+    </head>
+
+    <body>
+
+    <div class="events-header-background-mary-poppins">
+        <h1 class="events-header-mary-poppins">Edit Event</h1>  
+    </div>
+
+    <div class="container text- pt-3 text-center">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <input class="form-control form-control-lg" type="text" placeholder="Mary Poppins - The Musical" aria-label=".form-control-lg example">
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- booking elements -->
+        <div class="row">
+            <div class="card col-6 col-sm-4 my-2 border-0">
+                <div class="card-body">
+                    <h1 class="card-title booking-card-header">Set dates:</h1>
+
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="Date1" aria-label="Date1" checked>
+                        </div>
+                        <input type="text" class="form-control input-control" aria-label="Text input with radio button" placeholder="15-11-2022">
+                    </div>
+                    <div class="input-group py-2">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="Date2" aria-label="Date2" checked>
+                        </div>
+                        <input type="text" class="form-control input-control" aria-label="Text input with radio button" placeholder="16-11-2022">
+                    </div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="Date3" aria-label="Date3" checked>
+                        </div>
+                        <input type="text" class="form-control input-control" aria-label="Text input with radio button" placeholder="29-11-2022">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="Date2" aria-label="Date4" checked>
+                        </div>
+                        <input type="text" class="form-control input-control" aria-label="Text input with radio button" placeholder="30-11-2022">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-6 col-sm-4 my-2 border-0">
+                <div class="card-body">
+                    <h1 class="card-title booking-card-header">Ticket Info:</h1>
+                    <div class="input-group pb-3">
+                        <span class="input-group-text w-100">Price Range</span>
+                        <input type="text" aria-label="First name" class="form-control input-control" placeholder="$69">
+                        <span class="input-group-text">to</span>
+                        <input type="text" aria-label="Last name" class="form-control input-control" placeholder="$199">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text w-100">Quantity Range</span>
+                        <input type="text" aria-label="First name" class="form-control input-control" placeholder="1">
+                        <span class="input-group-text">to</span>
+                        <input type="text" aria-label="Last name" class="form-control input-control" placeholder="5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-4 my-2 border-0">
+                <div class="card-body">
+                    <h1 class="booking-card-header ">Images:</h1>
+                    <div>
+                        <input class="form-control form-control-lg input-control" id="formFileLg" type="file">
+                    </div>
+                    <div class="container">
+                        <div class="row pt-2">
+                            <div class="card col-6 border-0">
+                                <img src="https://media.timeout.com/images/105896377/image.jpg" alt="Image 1">
+                            </div>
+                            <div class="card col-6 border-0">
+                                <img src="https://i.pinimg.com/originals/1d/2f/92/1d2f9228344c629e3eaa48ccc9397a50.png" alt="Image 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card col-6 col-sm-4 my-2 border-0">
+                <div class="card-body">
+                    <h1 class="card-title booking-card-header">Ticket Options:</h1>
+                    <!-- ticket types -->
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="type1" aria-label="type1" checked>
+                        </div>
+                        <input type="text" class="form-control input-control" aria-label="Text input with radio button" placeholder="Child">
+                    </div>
+                    <div class="input-group py-2">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="type2" aria-label="type2" checked>
+                        </div>
+                        <input type="text" class="form-control input-control" aria-label="Text input with radio button" placeholder="Standard">
+                    </div>
+                    <div class="input-group pb-2">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="type3" aria-label="type3" checked>
+                        </div>
+                        <input type="text" class="form-control input-control" aria-label="Text input with radio button" placeholder="Silver">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" value="type4" aria-label="type4" checked>
+                        </div>
+                        <input type="text" class="form-control input-control" aria-label="Text input with radio button" placeholder="Gold">
+                    </div>
+
+                    <label for="StateList" class="form-label pt-2">Status</label>
+                    <input class="form-control input-control" list="datalistOptions" id="StateList" placeholder="Upcoming">
+                    <datalist id="datalistOptions">
+                        <option value="Upcoming">
+                        <option value="Inactive">
+                        <option value="Booked">
+                        <option value="Cancelled">
+                    </datalist>
+                </div>
+            </div>
+
+            <div class="card col-6 col-sm-4 border-0">
+                <div class="card-body">
+                    <h1 class="card-title booking-card-header">Content:</h1>
+                    <p1>Synopsis</p1>
+                    <textarea class="form-control" id="UserComment" rows="3" placeholder="Cameron Mackintosh and Disney are delighted to announce that their acclaimed Tony® and Olivier Award-winning production of MARY POPPINS, ‘practically perfect in every way’, will open at the Brisbane Lyric Theatre in November 2022. Featuring the beloved quintessentially English magical Nanny, MARY POPPINS, has been seen by over 12 million people worldwide and was the winner of a record breaking 8 Helpmann awards in Australia in 2011."></textarea>
+                    <br><p1>Description</p1>
+                    <textarea class="form-control" id="UserComment" rows="3" placeholder="Disney and Cameron Mackintosh’s new production of MARY POPPINS is now playing at the Sydney Lyric Theatre for a strictly limited season. Adapted from the beloved stories by PL Travers and the original film; the magical tale of the world’s favourite Nanny comes to life on stage in a spectacular and unforgettable production. The multi-award winning and critically acclaimed MARY POPPINS is co-created by Cameron Mackintosh, with a book by the Academy Award®-winning screenwriter Julian Fellowes. 
+                    The producer for Disney Theatrical Productions is Thomas Schumacher. The original music and lyrics by Richard M. Sherman and Robert B. Sherman include the timeless favourites Jolly Holiday, Step in Time, Feed the Birds and Supercalifragilisticexpialidocious. New songs and additional music and lyrics are by the Olivier award-winning British team of George Stiles and Anthony Drew including the now celebrated classics Practically Perfect and Anything Can Happen. This production of MARY POPPINS has orchestrations by William David Brohn with dance and vocal arrangements by George Stiles. It has a new sound design by Paul Gatehouse and new lighting by Hugh Vanstone and Natasha Katz. Co-choreography is by Stephen Mear. The reimagined set and costume designs are by Bob Crowley. Co-direction and choreography is by Matthew Bourne and direction by Richard Eyre. This triumphant theatrical experience is a must-see for 2022."></textarea>
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-4 my-2 border-0">
+                <div class="card-body">
+                    <h1 class="card-header booking-card-header">Overview:</h1>
+                    <div class="card-header">
+                        Mary Poppins - The Musical
+                    </div>
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Ticket Types: </b>Child to VIP</li>
+                    <li class="list-group-item"><b>Ticket Max Qty: </b>5</li>
+                    <li class="list-group-item"><b>Ticket Price Range: </b>$99 to $199</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4">
+                <a href="account.html" onclick="purchaseConfirmation()" class="btn book-now-btn mt-3 w-100">Save Changes</a>
+
+                <script>
+                    function purchaseConfirmation() {
+                        alert('Successfully Updated your event. Please give us a moment to update your event for everyone!')
+                    }
+                </script>
+            </div>
+            <div class="col-4"></div>
+            
+        </div>
+
+        <!-- location-->
+        <div class="row">
+            <div class="col-12">
+                <div class="card-header">
+                    <h1 class="category-header">Location</h1>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.8441841193267!2d153.01745341546027!3d-27.474109882889078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a08eb1b3c37%3A0x530f7ce3f1e6323d!2sLyric%20Theatre!5e0!3m2!1sen!2sau!4v1663477897288!5m2!1sen!2sau" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="card col-12 pt-3 border-0">
+                <div class="card-header">
+                    <h1 class="event-header">
+                        Address
+                    </h1>
+                    <div class="input-group">
+                        <span class="input-group-text">Street Number</span>
+                        <input type="text" aria-label="First name" class="form-control" placeholder="1">
+                    </div>
+                    <div class="input-group pt-1">
+                        <span class="input-group-text">Street Name</span>
+                        <input type="text" aria-label="First name" class="form-control" placeholder="Grey and Melbourne St">
+                    </div>
+                    <div class="input-group pt-2">
+                        <span class="input-group-text">Suburb</span>
+                        <input type="text" aria-label="First name" class="form-control" placeholder="South Brisbane">
+                    </div>
+                    <div class="input-group pt-1">
+                        <span class="input-group-text">Post Code</span>
+                        <input type="text" aria-label="First name" class="form-control" maxlength="4" placeholder="4001">
+                    </div>
+                    <label for="StateList" class="form-label pt-2">State</label>
+                    <input class="form-control" list="datalistOptions" id="StateList" placeholder="Queensland">
+                    <datalist id="datalistOptions">
+                    <option value="Queensland">
+                    <option value="New South Wales">
+                    <option value="Victoria">
+                    <option value="South Australia">
+                    <option value="Northen Teritory">
+                    <option value="Western Australia">
+                    <option value="Australian Capital Teritory">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+    </body>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="events-landing.html" class="nav-link px-2 text-muted">Categories</a></li>
+                        <li class="nav-item"><a href="account.html" class="nav-link px-2 text-muted">My Account</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">News</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">New Releases</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">About</a></li>
+                    </ul>
+            </div>
+            <div class="footer-acknowledgement">
+                <p3>In the spirit of reconciliation, PerformBook acknowledges the Traditional Custodians of Country throughout Australia and their connections to land, water and community. 
+                    We pay our respects to Elders past and present, and extend that respect to all Aboriginal and Torres Strait Islander peoples today.</p3>
+            </div>
+                <!-- social icons -->
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg><use xlink:href="#facebook"/></svg></a></li>
+                </ul>
+            </div>
+            
+            <p class="text-center text-muted">&copy; PerformBook. A division of Thomas Thorpe PTY LTD</p>
+        </div>
+    </footer> 
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+
+</html>
